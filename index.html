@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container main-container">
+    <h1><i class="fas fa-briefcase animated-icon"></i> My Job Tracker</h1>
+
+    <form id="jobForm">
+        <div class="input-group">
+            <i class="fas fa-building input-icon"></i>
+            <input type="text" id="company" placeholder="Company Name" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-id-card input-icon"></i>
+            <input type="text" id="title" placeholder="Job Title" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-tasks input-icon"></i>
+            <select id="status">
+                <option value="Applied">Applied</option>
+                <option value="Interviewing">Interviewing</option>
+                <option value="Offer">Offer</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+        </div>
+        <button type="submit" id="submitBtn">
+            <i class="fas fa-plus"></i> Add Job
+        </button>
+    </form>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th><i class="fas fa-building"></i> Company</th>
+                    <th><i class="fas fa-id-card"></i> Job Title</th>
+                    <th><i class="fas fa-tasks"></i> Status</th>
+                    <th><i class="fas fa-calendar-alt"></i> Date</th>
+                    <th><i class="fas fa-cogs"></i> Actions</th>
+                </tr>
+            </thead>
+            <tbody id="jobTableBody">
+                </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
