@@ -10,7 +10,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root', 
-    password: 'mysqlaastha20', // REPLACE THIS
+    password: 'Your_password', // REPLACE THIS
     database: 'job_tracker'
 });
 
